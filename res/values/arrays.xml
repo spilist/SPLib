@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="recommend_array_public">
+        <item>화려한 외출 김선영</item>
+        <item>수지 1박 2일 모닝엔젤</item>
+        <item>김연아 쇼트 리허설</item>
+        <item>신화 앤디 도박 후폭풍</item>
+        <item>미국 뉴먼 석방 환영</item>
+        <item>수능 자연계 유일 만점자</item>
+        <item>월드컵 조추첨 결과</item>
+        <item>이희호 넬슨 만델라</item>
+        <item>美 60대 위안부 소녀상</item>
+        <item>기본기 충실한 K3 디젤</item>
+    </string-array>
+	<string-array name="recommend_array_private">
+        <item>게임중독 벗어나는 법</item>
+        <item>박근혜 테러</item>
+        <item>에일리 노출사진</item>
+        <item>이석기 녹취록</item>
+        <item>일간베스트 만화</item>        
+    </string-array>
+</resources>
