@@ -9,6 +9,7 @@ import android.view.View.OnClickListener;
 import android.view.View.OnTouchListener;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
+import android.widget.GridView;
 
 import com.splib.SplibController;
 
@@ -17,9 +18,11 @@ public class SPLib_MainActivity extends Activity{
 	private Button btnShowSearch, btnShowMsg, btnShowGallery;
 	private SplibController spController;
 	private MsgController msgController;
-	private RecommendController reController;	
+	private RecommendController reController;
+	private ImgController imgController;
 	
 	AutoCompleteTextView searchView;
+	GridView gridView;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -27,11 +30,14 @@ public class SPLib_MainActivity extends Activity{
 		spController = new SplibController(this);
 		reController = new RecommendController(this, spController);		
 		msgController = new MsgController(this, spController);
+		imgController = new ImgController (this, spController);
 		
 		setContentView(R.layout.activity_main);
 
 		searchView = (AutoCompleteTextView) findViewById(R.id.searchView);
 		searchView.setOnTouchListener(touchListener);
+		
+		gridView = (GridView) findViewById(R.id.gridView);
 		
 		btnShowSearch = (Button) findViewById(R.id.btn_showSearch);
 		btnShowMsg = (Button) findViewById(R.id.btn_showMessage);
@@ -61,12 +67,11 @@ public class SPLib_MainActivity extends Activity{
 					msgController.start();
 					break;
 				case R.id.btn_showGallery:
-					//msgController.start();
+					imgController.start(gridView);					
 					break;
 			}			
 		}
 	};
-
 	
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -76,5 +81,5 @@ public class SPLib_MainActivity extends Activity{
 				spController.setSPCheckDone(true);	        	
 	        }
 	    }
-	}
+	}		
 }

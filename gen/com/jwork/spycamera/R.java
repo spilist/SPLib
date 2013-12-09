@@ -15,10 +15,10 @@ public final class R {
 		public static final int widget_margin = 0x7f040003;
 	}
 	public static final class id {
-		public static final int fragmentMain = 0x7f090007;
-		public static final int linearLayoutPreview = 0x7f090005;
-		public static final int svPreview = 0x7f090006;
-		public static final int wholeLayout = 0x7f090004;
+		public static final int fragmentMain = 0x7f090008;
+		public static final int linearLayoutPreview = 0x7f090006;
+		public static final int svPreview = 0x7f090007;
+		public static final int wholeLayout = 0x7f090005;
 	}
 	public static final class layout {
 		public static final int fragment_main = 0x7f030001;
