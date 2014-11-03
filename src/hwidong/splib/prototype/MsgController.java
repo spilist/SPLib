@@ -52,8 +52,7 @@ public class MsgController {
 	};
 	
 	public void start() {
-		spController.checkSP();
-		spController.sendMsgStart(handler); 
+		spController.getSP((Handler)handler); 
 	}
 	
 	public void showText(int mode) {
@@ -78,6 +77,6 @@ public class MsgController {
 		    }
 		});
 		
-		ad.show();										  			
+		ad.show();
 	}
 }

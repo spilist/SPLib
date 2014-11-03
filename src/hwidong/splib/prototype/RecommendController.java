@@ -57,8 +57,7 @@ public class RecommendController {
 	public void start(AutoCompleteTextView view) {
 		if (isSearchHidden) {
 			this.view = view;
-			spController.checkSP();
-			spController.sendMsgStart(handler);
+			spController.getSP((Handler)handler); 
 			isSearchHidden = false;
 		}
 		else {

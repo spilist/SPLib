@@ -85,8 +85,7 @@ public class ImgController extends BaseAdapter{
 	public void start(GridView view) {
 		if (isGalleryHidden) {			
 			this.view = view;
-			spController.checkSP();
-			spController.sendMsgStart(handler);
+			spController.getSP((Handler)handler); 
 			isGalleryHidden = false;
 		}
 		else {
